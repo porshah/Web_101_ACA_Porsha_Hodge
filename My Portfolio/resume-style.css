@@ -1,0 +1,99 @@
+body {
+    background-color: #ECECEC;
+}
+
+.body {
+    font-family: <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+}
+
+.box2 {
+align-items: center;
+}
+
+.box1> div{
+    background-color: #ECECEC;
+}
+
+.nested {
+    /* width: 300px; */
+    border: 0;
+    padding: 50px;
+    /* margin: 20px; */
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap:1px;
+    justify-items:stretch;
+    align-items:stretch;
+}    
+.wrapper > div{
+  background: #ECECEC;
+  padding: 1em;  
+}    
+
+
+.wrapper > div:nth-child(odd){
+    background: #ddd;
+}
+
+.nested{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-auto-rows: 35px 70px;
+    grid-gap: 3em;
+    row-gap: 10px;
+    
+}
+
+
+.box1{
+    align-self: auto;
+    padding: 0rem !important;
+    /*grid-column: auto;*/
+}
+
+.box2{
+    align-self: auto;
+    justify-content: center;
+    font-size: 200%
+        
+}
+
+
+.box3{
+    background-color: blue;
+}
+.box4{
+    grid-row-end: span 2;
+}
+
+.box6{ 
+    background-color: #ECECEC !important;
+}
+
+.box2>h1{
+    margin: .2rem;
+}
+
+.box2>h2{
+    margin-top: 3rem;
+}
+
+.box3>h2{
+    margin: .2rem;
+}
+
+.box3>h4{
+    margin: .2rem;
+}
+
+.box4>h4{
+    margin: .2rem;
+}
+
+.box5>h2{
+    margin: .2rem;
+}
