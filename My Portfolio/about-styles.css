@@ -1,0 +1,72 @@
+/* phone layout */
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "Heading"
+    "ProfilePic"
+    "Author"
+    "Entrepreneur""
+}
+
+body{
+    background-image: url(./images/pink-clouds.jpg);
+}
+section {
+    padding:30px;
+    text-align: center;
+}
+
+/* .ProfilePic{ */
+    /* grid-area: ProfilePic; */
+}
+.Heading{
+    grid-area: Heading;
+}
+.Author{
+    grid-area: Author;
+}
+.Entrepreneur{
+    grid-area: Entrepreneur;
+}
+img.Profile{
+    padding: 40px;
+    width: 500px;
+    border-radius: 35%;
+}
+
+p{
+    font-size: 25px;
+    font-family:'Playfair Display', serif;
+    text-align: center;
+}
+h1{
+    font-size: 60px;
+    font-family:'Playfair Display', serif;
+    text-align: center;
+}
+
+@media screen and (min-width: 576px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "ProfilePic Heading"
+        "Author     Entrepreneur"
+    }
+}
+
+@media screen and (min-width: 970px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "ProfilePic Heading"
+                    "Author"
+                    "Entrepreneur"
+    }
+}
