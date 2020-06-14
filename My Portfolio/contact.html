@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact-styles.css"></link>
+    <title>Contact Page</title>
+</head>
+<!-- <div class="heading"> -->
+    <!-- <h1>Let's Stay Connected</h1> -->
+
+<body>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+      <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" >
+      </div>
+      <br>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" >
+      </div>
+      <br>
+      <br>
+      <div>
+        How did you hear about us?
+        <div>
+          <br>
+        
+          <label for="classmate">Classmate</label>
+          <input type="checkbox" name="classmate" id="classmate">
+        </div>
+        <div>
+          <label for="resume submission">Resume Submission</label>
+          <input type="checkbox" name="resume submission" id="resume submission">
+        </div>
+        <div>
+            <label for="linkedin">LinkedIn</label>
+            <input type="checkbox" name="linkedin" id="linkedin">
+          </div>
+          <div>
+            <label for="coding academy rec">Coding Academy Rec</label>
+            <input type="checkbox" name="coding academy rec" id="coding academy rec">
+          </div>
+          <br>
+          <br>
+      </div>
+      <div>
+        Would like us to contact you?
+        <div>
+          <label for="yes">Yes</label>
+          <input type="radio" name="answer" id="yes" value="yes">
+        </div>
+        <div>
+          <label for="no">No</label>
+          <input type="radio" name="answer" id="no" value="no">
+        </div>
+      </div>
+      <br>
+      <div>
+        <label for="birthday">Birthday</label>
+        <input type="date" name="birthday" id="birthday">
+      </div>
+      <br>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+      <!-- <button type="reset">Reset</button> -->
+      <br>
+      <br>
+      <br>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
